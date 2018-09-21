@@ -7,6 +7,7 @@
 	<classpathentry kind="lib" path="F:/Official/selenium/cucumber-core-1.2.5.jar"/>
 	<classpathentry kind="lib" path="F:/Official/selenium/cucumber-core-1.2.4.jar"/>
 	<classpathentry kind="lib" path="F:/Official/selenium/cucumber-core-3.0.2.jar"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="F:/Official/selenium/jar_files/cucumber-core-2.1.0.jar"/>
 	<classpathentry kind="lib" path="F:/Official/selenium/jar_files/cucumber-html-0.2.6.jar"/>
 	<classpathentry kind="lib" path="F:/Official/selenium/jar_files/cucumber-junit-2.1.0.jar"/>
@@ -15,5 +16,7 @@
 	<classpathentry kind="lib" path="F:/Official/selenium/jar_files/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="lib" path="F:/Official/selenium/jar_files/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="F:/Official/selenium/jar_files/tag-expressions-1.0.1.jar"/>
+=======
+>>>>>>> 5300c7dfb5ef923bff582fb43e688eca870f776d
 	<classpathentry kind="output" path="bin"/>
 </classpath>

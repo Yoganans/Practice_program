@@ -15,7 +15,11 @@ public class DriverSetup {
 	public static WebDriver driver;
 	public static WebDriverWait webWait;
 	public static String appUrl="http://automationpractice.com";
+<<<<<<< HEAD
 	//public static MyStore ObjForMyStore=new MyStore(driver); 
+=======
+	public static MyStore ObjForMyStore=new MyStore(driver); 
+>>>>>>> 5300c7dfb5ef923bff582fb43e688eca870f776d
 	
 	public static void setDriver(String browserType, String applicationUrl){
 		appUrl=applicationUrl;

@@ -23,9 +23,15 @@ public class MyStore {
 	public static WebDriverWait webWait;
 	public static String orderReference;
 	
+<<<<<<< HEAD
 /*	public MyStore(WebDriver driver){
 		MyStore.driver=driver;
 	}*/
+=======
+	public MyStore(WebDriver driver){
+		MyStore.driver=driver;
+	}
+>>>>>>> 5300c7dfb5ef923bff582fb43e688eca870f776d
 	
 	public static String appUrl="http://automationpractice.com";
 	//public static MyStore ObjForMyStore=new MyStore(driver); 
@@ -34,7 +40,11 @@ public class MyStore {
 		setDriver("chrome", appUrl);
 		appLogin("someone@example.com", "Password123");
 		tShirtOrder();		
+<<<<<<< HEAD
 		orderValidation();
+=======
+		//orderValidation();
+>>>>>>> 5300c7dfb5ef923bff582fb43e688eca870f776d
 		personalUpdate("Password123");
 	}
 	
@@ -139,6 +149,7 @@ public class MyStore {
 		/*WebElement element=driver.findElement(By.xpath("//span[text()='Order history and details']"));
 		element.click();*/
 		driver.findElement(By.linkText("ORDER HISTORY AND DETAILS")).click();
+<<<<<<< HEAD
 		//jsx.executeScript("arguments[0].click;", element);
 		Thread.sleep(5000);
 		driver.navigate().refresh();
@@ -146,6 +157,13 @@ public class MyStore {
 		String orderValidation=driver.findElement(By.xpath("(//td[@class='history_link bold']//a)[1]")).getAttribute("innerText").trim();
 		Assert.assertTrue(orderReference.contains(orderValidation), "Recent ordered item is not in the top list in Order history table");
 		System.out.println("Scenario 1 PASSED");
+=======
+		driver.navigate().refresh();
+		//jsx.executeScript("arguments[0].click;", element);
+		Thread.sleep(5000);
+		Assert.assertTrue(orderReference.contains(driver.findElement(By.xpath("(//td[@class='history_link bold']//a)[1]")).getAttribute("innerText")), "Recent ordered item is not in the top list in Order history table");
+		
+>>>>>>> 5300c7dfb5ef923bff582fb43e688eca870f776d
 		}
 	
 	public static void personalUpdate(String currentPassword) throws InterruptedException{
@@ -158,7 +176,10 @@ public class MyStore {
 		element.sendKeys("Yoga");
 		driver.findElement(By.xpath("//label[@for='old_passwd']/following-sibling::input")).sendKeys(currentPassword);
 		driver.findElement(By.xpath("//span[text()='Save']")).click();
+<<<<<<< HEAD
 		System.out.println("Scenario 2 PASSED");
+=======
+>>>>>>> 5300c7dfb5ef923bff582fb43e688eca870f776d
 		
 	}
 }
